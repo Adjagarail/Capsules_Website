@@ -1,0 +1,54 @@
+
+    <!-- ==================== Start Navbar ==================== -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="{{path('Capsules Digital')}}">
+                <img src="{{asset('assets/img/logo-light.png')}}" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{path('Capsules Digital')}}"> Accueil </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> A Propos </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html"> Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Portfolio"> Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{path('blog')}}"> Blog </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{path('contact')}}"> Contact </a>
+                    </li>
+                </ul>
+                <div class="search">
+                    <span class="icon pe-7s-search cursor-pointer"></span>
+                    <div class="search-form text-center custom-font">
+                        <form>
+                            <input type="text" name="search" placeholder="Vous cherchez...">
+                        </form>
+                        <span class="close pe-7s-close cursor-pointer"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== End Navbar ==================== -->

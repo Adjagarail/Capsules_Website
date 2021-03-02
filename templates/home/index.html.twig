@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ controller_name }}{% endblock %}
+
+{% block body %}
+{{include('includes/navbar.html.twig')}}
+
+{{include('includes/slide.html.twig')}}
+
+{{ include('includes/about.html.twig') }}
+
+{{ include('includes/service.html.twig') }}
+
+{{ include('includes/portfolio.html.twig') }}
+
+{{ include('includes/client.html.twig') }}
+
+
+{{ include('includes/blog.html.twig') }}
+
+{{ include('includes/calltoaction.html.twig') }}
+
+{# {{ include('includes/contact.html.twig') }} #}
+
+{{ include('includes/footer.html.twig') }}
+
+{% endblock %}
