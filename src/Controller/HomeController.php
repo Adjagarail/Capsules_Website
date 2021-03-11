@@ -14,7 +14,7 @@ class HomeController extends AbstractController
     public function index(): Response
     {
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'Capsules Digital',
+            'controller_name' => 'Capsules Digital  - Les Doses qui boostent votre entreprise',
         ]);
     }
 }
