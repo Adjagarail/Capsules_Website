@@ -1,7 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ServiceController!{% endblock %}
+{% block title %}{{controller_name}}{% endblock %}
 
 {% block body %}
 {{ include('includes/navbar.html.twig') }}
+
+    <!-- ==================== Start Slider ==================== -->
+
+    <header class="pages-header bg-img valign parallaxie" data-background="{{asset('assets/img/slid/1.jpg')}}" data-overlay-dark="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cont text-center">
+                        <h1 style="text-transform:uppercase;"> {{controller_name}} </h1>
+                        <div class="path">
+                            <a href="#0"> Acceuil </a><span>/</span><a href="#0" class="active"> {{controller_name}} </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== End Slider ==================== -->
+
+{{ include('includes/footer.html.twig') }}
 {% endblock %}
